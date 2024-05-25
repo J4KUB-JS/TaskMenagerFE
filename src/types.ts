@@ -4,4 +4,5 @@ export interface Task {
   desc: string;
   dueDate: string;
   done: boolean;
+  isNew?: boolean;
 }

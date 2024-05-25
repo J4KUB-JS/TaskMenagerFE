@@ -1,9 +1,9 @@
 import axios from "axios";
 import { Task } from "../types";
 
-export const getTasks = (order?: string = "DESC", val?: string = "") => {
+export const getTasks = (order: string = "DESC", val: string = "") => {
   return axios
-    .get(`http://127.0.0.1:8000/tasks?search=${val}&order=${order}`)
+    .get(`http://127.0.0.1:8000/tasks?order=${order}&search=${val}`)
     .then((res) => res.data);
 };
 
